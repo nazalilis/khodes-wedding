@@ -10,9 +10,26 @@ body {
   min-height: 2000px;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/bg.webp);
+  z-index: -1;
+  filter: grayscale();
+  -webkit-filter: grayscale();
+}
+
 .hero {
   min-height: 100vh;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
+}
+
+.hero h1, .hero h4, .hero p {
+  text-shadow: var(--shadow);
 }
 
 .hero h4 {
@@ -31,9 +48,32 @@ body {
 .hero a {
   color: var(--pink);
   background-color: white;
+  box-shadow: var(--shadow);
 }
 
 .hero a:hover {
   background-color: var(--pink);
   color: white;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
 }
