@@ -5,7 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1" />
-		<title>Kho & Des Wedding</title>
+		<title>Kode's Wedding</title>
 
 		<!-- Style -->
 		<!-- bootstrap css -->
@@ -26,14 +26,13 @@
 			href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet" />
 		<!-- My css -->
-		<link
-			rel="stylesheet"
-			href="src/css/style.css" />
-
+		<link rel="stylesheet" href="src/css/style.css" />
+		<!-- SimplyCoutdown css -->
 		<link rel="stylesheet" href="src/css/default.min.css">
 	</head>
 
 	<body>
+
 		<section
 			id="hero"
 			class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
@@ -43,16 +42,88 @@
 				<p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
 				<a
-					href="#"
+					href="#home"
 					class="btn btn-lg mt-4"
 					>Lihat Undangan</a>
+		</section>
 
+		<nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+			<div class="container">
+				<a class="navbar-brand" href="#">Kode's Wedding</a>
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kode's Wedding</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="navbar-nav ms-auto">
+							<a class="nav-link" href="#home">Home</a>
+							<a class="nav-link" href="#info">Info</a>
+							<a class="nav-link" href="#story">Story</a>
+							<a class="nav-link" href="#gallery">Gallery</a>
+							<a class="nav-link" href="#rsvp">RSVP</a>
+							<a class="nav-link" href="#gifts">Gifts</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="home" class="home">
+			<div class="container">
+
+				<div class="row justify-content-center">
+					<div class="col-md-10 text-center">
+						<h2>Acara Pernikahan</h2>
+						<h3>Diselenggarakan pada 31 Februarri 2026 di Gunungkidul, Yogyakarta</h3>
+						<p>Oleh karena itu, dengan segala hormat, kami berrmaksud umtuk mengundang Bapak/Ibu/Saudarara/i, untuk hadir pada acara pernikahan kami</p>
+					</div>
+				</div>
+
+				<div class="row couple">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-8 text-end">
+								<h3>Mr Kho</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ratione harum numquam maiores totam voluptas!</p>
+								<p>Putra dari Bpk. XYZ <br> dan <br> Ibu. ABC</p>
+							</div>
+							<div class="col-4">
+								<img src="src/img/pria.webp" alt="Mempelai Pria"	class="img-responsive rounded-circle">
+							</div>
+						</div>
+					</div>
+
+					<span class="heart">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+						</svg>
+					</span>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-4">
+								<img src="src/img/wanita.webp" alt="Mempelai Wanita"	class="img-responsive rounded-circle">
+							</div>
+							<div class="col-8">
+								<h3>Mrs Des</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ratione harum numquam maiores totam voluptas!</p>
+								<p>Putri dari Bpk. ABC <br> dan <br> Ibu. XYZ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-			crossorigin="anonymous"></script>
+			crossorigin="anonymous">
+		</script>
 
       <script src="src/js/simplyCountdown.umd.js"></script>
       <script src="src/js/countdown.js"></script>
